@@ -5,6 +5,7 @@ import { UsersRoutingModule } from './users-routing.module';
 import { MasterPageComponent } from './master-page/master-page.component';
 import { PublicCardsComponent } from './public-cards/public-cards.component';
 import { CardComponent } from './card/card.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { CardComponent } from './card/card.component';
   imports: [
     CommonModule,
     UsersRoutingModule,
-    MatCardModule
+    MatCardModule,
+    RouterModule
    
   ]
 })

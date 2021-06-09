@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-public-cards',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./public-cards.component.css']
 })
 export class PublicCardsComponent implements OnInit {
-
-  constructor() { }
+users:any=[];
+  constructor(private usersService: UsersService) { }
 
   ngOnInit(): void {
+    this.usersService.getAllRecords().subscribe(
+      (users) => {
+        console.log(users);
+        this.users=users;
+      },
+      (err) => console.log
+    );
+  }
   }
 
-}
+
