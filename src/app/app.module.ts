@@ -7,6 +7,7 @@ import { NavbarComponent } from './public/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule, 
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
