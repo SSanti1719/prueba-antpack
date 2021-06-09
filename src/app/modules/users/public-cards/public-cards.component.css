@@ -1,0 +1,14 @@
+.users {
+    width: 100%;
+    display: grid;
+    row-gap: 20px;
+    margin: 10px auto;
+    justify-content: center;
+  }
+
+@media (min-width: 990px) {
+.users{    
+    width: 940px;
+    grid-template-columns: repeat(2, 50%);
+}
+}

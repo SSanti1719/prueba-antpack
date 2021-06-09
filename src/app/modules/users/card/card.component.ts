@@ -15,6 +15,8 @@ export class CardComponent implements OnInit {
     this.getGravatal();
   }
   getGravatal(){
+    console.log(this.user);
+    
      this.emailHash = Md5.hashStr(this.user.email.trim().toLowerCase());
      
     }

@@ -5,6 +5,6 @@ export interface UserModel{
     name: string,
     username: string,
     email: string,
-    adress:AdressModel,
+    address:AdressModel,
     company:CompanyModel
 }
